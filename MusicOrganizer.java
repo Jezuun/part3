@@ -62,6 +62,13 @@ public void listAllFiles() {
         position++;
     }
 }
+public void listMatching(String searchString) {
+    for (String filename : files) {  // assuming files is your ArrayList<String>
+        if (filename.contains(searchString)) {
+            System.out.println(filename);
+        }
+    }
+}
 
     
     /**
