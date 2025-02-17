@@ -55,12 +55,14 @@ public class MusicOrganizer
     /**
      * Show a list of all the files in the collection.
      */
-    public void listAllFiles()
-    {
-        for(String filename : files) {
-            System.out.println(filename);
-        }
+public void listAllFiles() {
+    int position = 0;
+    for (String filename : files) { // assuming files is your ArrayList<String>
+        System.out.println(position + ": " + filename);
+        position++;
     }
+}
+
     
     /**
      * Remove a file from the collection.
